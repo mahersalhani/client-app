@@ -48,7 +48,7 @@ export default function SignUp() {
 
       localStorage.setItem("uid", user.user?.uid as string);
 
-      const newUser = await fetch("http://localhost:8000/api/sing-up", {
+      const newUser = await fetch("/api/sing-up", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

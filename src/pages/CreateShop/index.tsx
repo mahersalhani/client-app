@@ -69,7 +69,7 @@ export default function CreateShop() {
           ports: [...ports.ports],
         });
 
-      const createShop = await fetch("http://localhost:8000/api/create-new-shop", {
+      const createShop = await fetch("/api/create-new-shop", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
